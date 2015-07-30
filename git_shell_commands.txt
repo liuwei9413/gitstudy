@@ -1,0 +1,6 @@
+git clone url 克隆github网站上项目
+git config --global user.name "liuwei9413" 设置贡献者名称
+git config --global user.email "570366990@qq.com" 设置邮箱
+git init 在某个文件夹内初始化git
+git status 查看当前项目文件的状态
+git add demo.html 添加文件到缓存区
