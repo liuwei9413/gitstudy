@@ -16,6 +16,16 @@ git diff master 工作区--版本库对比
 撤销：
 git reset HEAD demo.html 从暂存区撤回工作区
 git checkout -- demo.js  工作区撤回到版本库状态(回退)
+git commit -m "注释" --amend  暂存区多个文件只提交部分到版本库 回退上一次提交 并一次提交暂存区所有文件
+删除：
+git rm demo.js  删除暂存区文件(前提是工作区文件已经手动删除)
+git rm -f demo.js  同时删除工作区和缓存区文件
+git rm --cached demo.js  删除缓存区文件(保留工作区文件)
+恢复
+git checkout commit_id filename  恢复某个文件到指定版本
+git reset --hard commit_id	恢复到指定版本
+git reflog 	查看所有版本id 用于返回最新版本
+
 
 
 
