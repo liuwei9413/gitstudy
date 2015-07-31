@@ -15,7 +15,7 @@ git diff -- cached  暂存区--版本库对比
 git diff master 工作区--版本库对比 
 撤销：
 git reset HEAD demo.html 从暂存区撤回工作区
-
+git checkout -- demo.js  工作区撤回到版本库状态(回退)
 
 
 
