@@ -25,6 +25,39 @@ git rm --cached demo.js  删除缓存区文件(保留工作区文件)
 git checkout commit_id filename  恢复某个文件到指定版本
 git reset --hard commit_id	恢复到指定版本
 git reflog 	查看所有版本id 用于返回最新版本
+同步到远程仓库
+git remote 查看远程仓库名(克隆时自带仓库名)
+git remote -v	查看远程仓库名+对应仓库地址
+git push origin(仓库名) master(分支名)	同步到远程仓库
+多人协作解决冲突(每次开发先同步更新代码)
+git fetch	(从远端同步手动合并) 先查看冲突，能查看到冲突细节
+	git diff master origin/master
+	git merge origin/master	
+git pull	(从远端同步直接合并)
+开源项目协作
+1.fork到自己github版本库 下载到本地作修改
+2.pull request 到项目管理人
+分支处理
+git branch	查看分支
+	-d new1 删除new1分支
+	--merged 查看当前分支的合并分支
+	--no-merged 查看分支未合并的分支
+git branch new1		创建分支
+git checkout new1	切换分支
+git checkout -b new2	创建分支并切换到该分支
+git merge new1(在master分支下)		快速合并分支master和new1
+添加标签 tag
+git tag v1.0	创建标签
+git push origin v1.0	同步标签到远程仓库
+创建博客
+https://pages.github.com/
+
+
+
+
+
+
+
 
 
 
